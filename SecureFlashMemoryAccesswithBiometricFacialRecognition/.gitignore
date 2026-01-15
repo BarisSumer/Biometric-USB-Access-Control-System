@@ -1,0 +1,38 @@
+# --- Python Gereksiz Dosyaları ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Sanal Ortam (EN ÖNEMLİSİ) ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- PyInstaller Çıktıları (Gereksiz Büyük Dosyalar) ---
+build/
+dist/
+*.spec
+
+# --- IDE Ayarları (Gereksiz) ---
+.idea/
+.vscode/
+
+# --- GÜVENLİK VE GİZLİLİK (KRİTİK) ---
+# Şifreleme anahtarını asla yükleme!
+secret.key
+
+# Biyometrik verileri ve fotoğrafları yükleme!
+encrypted_faces/
+screenshots/
+
+# --- Yerel Loglar ve Ayarlar ---
+log.json
+hidden_volumes.json
+# allowed_disks.json dosyasını örnek olarak tutmak istersen bu satırı sil,
+# ama her bilgisayarın disk yapısı farklı olduğu için yüklememek daha iyidir:
+allowed_disks.json
+
+# --- Geçici Sistem Dosyaları ---
+*.txt
+!requirements.txt
